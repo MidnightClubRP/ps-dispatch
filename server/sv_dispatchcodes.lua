@@ -39,7 +39,10 @@ dispatchCodes = {
 	["vehicletheft"] =  {displayCode = '10-35', description = "Car Theft In Progress", radius = 0, recipientList = {'LEO', 'police'}, blipSprite = 595, blipColour = 60, blipScale = 1.5, blipLength = 2, sound = "Lose_1st", sound2 = "GTAO_FM_Events_Soundset", offset = "false", blipflash = "false"},
 	["signrobbery"] =  {displayCode = '10-35', description = "Sign Robbery Committed", radius = 0, recipientList = {'LEO', 'police'}, blipSprite = 358, blipColour = 60, blipScale = 1.5, blipLength = 2, sound = "Lose_1st", sound2 = "GTAO_FM_Events_Soundset", offset = "false", blipflash = "false"},
 	["susactivity"] =  {displayCode = '10-66', description = "Suspicious Activity", radius = 0, recipientList = {'LEO', 'police'}, blipSprite = 66, blipColour = 37, blipScale = 0.5, blipLength = 2, sound = "Lose_1st", sound2 = "GTAO_FM_Events_Soundset", offset = "false", blipflash = "false"},
-
+	["anoncall"] =  {displayCode = '911', description = "Illegal Hunting Activity", radius = 0, recipientList = {'police'}, blipSprite = 141, blipColour = 17, blipScale = 1.2, blipLength = 2, sound = "robberysound", offset = "true"},
+	["anoncall2"] =  {displayCode = '911', description = "Illegal Hunting Activity", radius = 0, recipientList = {'police'}, blipSprite = 671, blipColour = 1, blipScale = 1.2, blipLength = 2, sound = "robberysound", offset = "true"},
+	["anoncall3"] =  {displayCode = '911', description = "Body Disection", radius = 0, recipientList = {'police'}, blipSprite = 310, blipColour = 1, blipScale = 1.2, blipLength = 2, sound = "robberysound", offset = "true"},
+	
 	-- Rainmad Heists
 
 	["artgalleryrobbery"] =  {displayCode = '10-90', description = "Art Gallery Robbery In Progress", radius = 0, recipientList = {'LEO', 'police'}, blipSprite = 269, blipColour = 59, blipScale = 1.5, blipLength = 2, sound = "robberysound", offset = "false", blipflash = "false"},
