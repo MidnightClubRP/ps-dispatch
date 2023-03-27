@@ -199,6 +199,30 @@ end exports('CarBoosting', CarBoosting)
 ---- ps-signrobbery -------
 ---------------------------
 
+local function AtmRobbery()
+    local currentPos = GetEntityCoords(PlayerPedId())
+    local locationInfo = getStreetandZone(currentPos)
+    local gender = GetPedGender()
+    TriggerServerEvent("dispatch:server:notify",{
+        dispatchcodename = "atmrobbery", -- has to match the codes in sv_dispatchcodes.lua so that it generates the right blip
+        dispatchCode = "10-90",
+        firstStreet = locationInfo,
+        gender = gender,
+        model = nil,
+        plate = nil,
+        priority = 2, -- priority
+        firstColor = nil,
+        automaticGunfire = false,
+        origin = {
+            x = currentPos.x,
+            y = currentPos.y,
+            z = currentPos.z
+        },
+        dispatchMessage = 'Atm Robbery Committed', -- message
+        job = {"police"} -- jobs that will get the alerts
+    })
+end exports('AtmRobbery', AtmRobbery)
+
 local function SignRobbery()
     local currentPos = GetEntityCoords(PlayerPedId())
     local locationInfo = getStreetandZone(currentPos)
